@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+html {
+	font-size: 40.5%;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+ .animation {
+    text-align: center;
+    font-size: 3rem;
+    animation: flicker 2.5s infinite alternate;     
+  }
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+/*header*/
+  header {
+	width: 100%;
+	height: 108rem;
+	line-height: 8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+header .arriere-plan {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url("../assets/images/port.jpg" ) no-repeat center;
+	background-size: cover ;
+	z-index: -1;
+}
+header h1 {
+	width: 80.6rem;
+	color: #fff;
+    font-size: 10rem;
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	border: 5px solid orange;
+	padding: 2rem;
+	background: rgba(136, 134, 7, 0.6);
+}
+header h1 span {
+	font-size: 3rem;
+	line-height: 13rem;
+}
+.boutons {
+	width: 86%;
+	height: 33rem;
+	background: rgba(16, 115, 139, 0.8);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4rem 15rem;
+}
+.boutons .logo {
+	width: 30rem;
+	height: 100%;
+	align-self: center;
+	padding-top: 9rem;
+    padding-right: 3rem;
+}
+.boutons .logo img {
+	width: 100%;
+}
+.boutons .liens {
+	max-width: 80rem;
+}
+.boutons .liens a {
+	color: rgb(19, 14, 82);
+	margin-right: 3rem;
+    font-size: 3rem;
+    margin: 2;
+	padding: 0rem;
+	border: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.boutons .liens a:hover {
+	color: #00c1da;
+}
+/*presentation*/
+.titre1{
+    padding: 0%;
+    text-align: center;
+    font-size:9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.presentation p {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 5rem;
+	text-align: center;
+	line-height: 4rem;
+	margin-top: 4rem;
+    padding:2%;   
+}
+/*menu*/
+.menu{
+    padding:0%;
+}
+.section{
+    padding: 0%;
+    text-align: center;
+    font-size:9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ligne {
+    display: grid;
+  grid-auto-flow: column;
+  gap: 0%;
+  }
+/*.ligne{
+    display:flex;
+}*/
+  .column {
+    box-shadow: 2px 2px 2px #bbb;
+    border: 3px solid #bbb;
+    background-color: #fff;
+    margin: 10px;
+    padding: 2px;
+  }
+  .column h2
+  {
+      background-color: red;
+      color:#fff;
+      text-align: center;
+      font-family: cursive;
+      font-size: 6rem;
+      height: 16rem;
+  }
+  .image-food{
+      width: 390px;
+      height: 230px;  
+      border-radius: 90%;
+      padding: 0px;
+      border: 5px solid orangered;
+  }
+  .image-food img{
+      width: 100%;
+      height:100%;
+      border-radius: 80%;
+      object-fit: cover;
+  }
+  .box
+  {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 2px;
+  }
+  .box h3,h4{
+    font-size: 6rem;
+  }
+/* Reservation */
+.reservation {
+	width: 100%;
+	min-height: 83rem;
+	margin-top: 0rem;
+    padding: 0%;
+}
+.form-container {
+    place-items: center;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+.form-container .row {
+	display: flex;
+	margin-top: 2rem;
+    margin: 0 auto;
+    place-items: center;
+}
+.form-container .row .col {
+	padding: 2rem;
+	margin-right: 2rem;
+    min-width: 25rem;
+}
+.form-container .row .col input {
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 3rem;
+	padding-left: 0.8rem;
+	font-size: 2rem;
+}
+.form-container button {
+	width: 100%;
+	height: 7rem;
+	background-color: #da8800;
+	color: #fff;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+.form-container button:hover {
+	background-color: #ac4f00;
+}
+.l1 {
+    display: flex;
+}
+.c1 {
+    flex: 77.33%;
+    padding: 0px;
+    align-self: right;
+  }
+/* Footer */
+.footer {
+	width: 100%;
+	height: 25rem;
+	background: rgba(16, 115, 139, 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    padding:0%;
+}
+.footer .logo {
+	width: 30rem;
+	height: 100%;
+	align-self: center;
+	padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+.footer p{
+    font-size: 2.5rem;
+    color: rgb(241, 245, 7);
+    padding:0;
+}
